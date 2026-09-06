@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "electrician-toolbox",
+  "main": "worker/index.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Cloudflare's current recommended architecture: static assets + Worker,
+  // deployed together. Replaces the deprecated "Workers Sites" approach.
+  "assets": {
+    "directory": "dist/client",
+    "binding": "ASSETS",
+    // Client-side routed SPA: unmatched paths fall back to index.html so
+    // routes like /ohms-law resolve correctly on direct load / refresh.
+    "not_found_handling": "single-page-application"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+
+  // No secrets, no KV, no D1, and no environment variables are required for V1.
+  // The Worker exists to (a) serve the static app, (b) expose GET /health,
+  // and (c) leave room for future API routes without re-architecting.
+}
