@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://electrician-toolbox.example.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://electrician-toolbox.example.com/ohms-law</loc><priority>0.8</priority></url>
+  <url><loc>https://electrician-toolbox.example.com/power-current</loc><priority>0.8</priority></url>
+  <url><loc>https://electrician-toolbox.example.com/voltage-drop</loc><priority>0.8</priority></url>
+  <url><loc>https://electrician-toolbox.example.com/generator-load</loc><priority>0.8</priority></url>
+  <url><loc>https://electrician-toolbox.example.com/unit-converter</loc><priority>0.8</priority></url>
+</urlset>

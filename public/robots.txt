@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://electrician-toolbox.example.com/sitemap.xml
